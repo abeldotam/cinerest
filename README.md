@@ -1,24 +1,68 @@
-Rendu de projet de Java EE
-Martin Prieur de la Comble
-Abel Derderian
+<h1 align="center">Welcome to CINEREST 👋</h1>
 
-Dossier back : CINE-REST
-Dossier front : cinerest
+<p align="center">Java / Vue.js application which generate and use an API REST.</p>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/abeldotam/cinerest/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/abeldotam" target="_blank">
+    <img alt="Twitter: abeldotam" src="https://img.shields.io/twitter/follow/abeldotam.svg?style=social" />
+  </a>
+</p>
 
+> Little application in Java (Maven / Apache Tomcat 8.5.24) which will generate an API of movies database and make it available through an API REST. This API will be used by a front-end webapp written in Vue.js.
 
-Le back s'ouvre dans Intellij (Maven / Apache Tomcat 8.5.24) et génère une api sur localhost:9090
-Les différentes routes de l'API sont :
-/api/movies (en GET, pour voir tous les films)
-/api/movies/id (en GET, pour voir un film spécifique en fonction de son ID)
-/api/login (en POST pour se log)
+## Install
 
+Open the **back** folder in the Java IDE you feel confortable with (it has been tested with Intellij, with a simple Maven / Apache Tomcat configuration without any problems). Run the application with the adequate configurations.
 
-Le front est fait en Vue.js (un framework de node.js), il faut installer node.js puis se rendre dans "cinerest" et faire les commandes suivantes : 'npm install' puis 'npm run dev' (les dépendances vont être téléchargées) et le front s'ouvrira sur http://localhost:8080/
+Open then the **front** folder and run the usuals commands:
 
-On peut taper sur l'API via un navigateur ou Insomnia.rest sur http://localhost:9090, le front va néanmoins réécrire les routes différement dans le navigateur.
+```sh
+npm install
+```
 
-Fonctionnalités présentes :
-- Connexion
-- Affichage de tous les films
-- Affichage d'un film en particulier avec toutes les informations demandées
-- Affichage des films en fonction de la ville
+Launch in dev mode: 
+
+```sh
+npm run dev
+```
+
+Build the webapp:
+
+```sh
+npm run build
+```
+
+## Usage
+
+After that the back & front has been builded / launched, the webapp will be available on `http://localhost:8080``
+Frontend part will be available with several options and filter. API will be available on the following route:
+
+- **/api/login** (POST) --> Login with credentials
+- **/api/movies** (GET) --> All the movies
+- **/api/movies/id** (GET) --> Specific movie
+
+## Author
+
+👤 **Abel Derderian**
+
+* Twitter: [@abeldotam](https://twitter.com/abeldotam)
+* Github: [@abeldotam](https://github.com/abeldotam)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/abeldotam/cinerest/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [Abel Derderian](https://github.com/abeldotam).<br />
+This project is [https://github.com/abeldotam/cinerest/blob/master/LICENSE](https://github.com/abeldotam/cinerest/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
